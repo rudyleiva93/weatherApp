@@ -3,14 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Waether App</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <form action="/" method="post">
+    <form action="/" method="post" enctype="text/plain">
+
       <label for="cityInput">City name: </label>
       <input id="cityInput" type="text" name="cityName" placeholder="City Name">
-      <input id="apiKey" type="password" name="apiKey" placeholder="API Key">
-      <input id="units" type="text" name="units" placeholder="Units">
+      <input id="currentLocation" type="checkbox" name="currentLocation">Use current location<br>
+
+      <label for="apiKey">API Key: </label>
+      <input id="apiKey" type="password" name="apiKey" placeholder="API Key"><br>
+
+      <label for="units">Units: </label>
+      <input id="units" type="text" name="units" placeholder="Units"><br>
+
       <button type="submit">Go</button>
+
     </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>

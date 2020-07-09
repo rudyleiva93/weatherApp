@@ -1,0 +1,10 @@
+label {
+  display: inline-block;
+  width: 5rem;
+  text-align: left;
+  margin-bottom: 10px;
+}​
+
+.greyed-out {
+  color:#888 !important;
+}
