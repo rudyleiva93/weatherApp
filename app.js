@@ -11,7 +11,6 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-  console.log(req.body);
   const query = req.body.cityName;
   const apiKey = req.body.apiKey;
   const units = req.body.units;
@@ -33,10 +32,6 @@ app.post("/", function(req, res) {
     });
   });
 });
-
-
-
-
 
 
 

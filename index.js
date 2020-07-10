@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("#currentLocation").click(function() {
     if($(this).prop("checked") == true) {
+      $("#cityInput").val("");
       $("#cityInput").attr("disabled", "disabled");
       $("#cityInput").addClass("greyed-out");
     }
